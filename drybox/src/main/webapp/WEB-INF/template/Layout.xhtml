@@ -12,23 +12,22 @@
 </h:head>
 <h:body>
 	<header>
-		<h:graphicImage library="img" name="logo.png" />
+		<!-- <h:graphicImage library="img" name="logo.png" /> -->
 	</header>
 
-	<h:form id="menu">
-		<p:menubar>
-			<p:submenu label="Consultas">
-				<p:menuitem value="Pessoas"
-					action="/ConsultaPessoas?faces-redirect=true" />
+	<h:form id="menu">	
+		<p:menubar class="menu">
+			<p:submenu label="Usuário" class="item">
+				<p:menuitem value="Consultar Usuários" class="menuItem" action="/ConsultaUsuario?faces-redirect=true" />
+				<p:menuitem value="Cadastrar Usuário" class="menuItem" action="/CadastroUsuario?faces-redirect=true" />
 			</p:submenu>
-			<p:submenu label="Cadastros">
-				<p:menuitem value="Pessoas"
-					action="/CadastroPessoas?faces-redirect=true" />
-				<p:menuitem value="Lançamentos" 
-					action="/CadastroLancamentos?faces-redirect=true"/>
+			<p:submenu label="Material" class="item">
+				<p:menuitem value="Consultar Materias" class="menuItem" action="/ConsultaMaterial?faces-redirect=true" />
+				<p:menuitem value="Cadastrar Material" class="menuItem" action="/CadastroMaterial?faces-redirect=true"/>
 			</p:submenu>
+			<p:menuitem value="Historico" class="item"/>
 
-			<p:menuitem value="Sair" />
+			<p:menuitem value="Sair" class="item" />
 
 		</p:menubar>
 	</h:form>
@@ -38,7 +37,7 @@
 		<ui:insert name="corpo" />
 	</div>
 	<footer>
-		Sistema de Lançamentos <br /> <br />		
+		Sistema DRYBOX<br /> <br />		
 	</footer>
 </h:body>
 

@@ -1,0 +1,20 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.menu{
+	font-size: 17px;
+	background-color: #80b3ff;
+	border: none;
+	border-radius: 0px;
+}
+
+.item{
+	font-family: Cooper;
+}
+
+.menuItem{
+	background-color: #80b3ff;
+	font-family: Cooper;
+}

@@ -1,0 +1,67 @@
+body{
+	background: url(../img/background.jpg);
+	background-size: 100%;
+}
+
+#titulo{
+	margin-top: 8%;
+	margin-left: 12%;
+	font-size: 60px;
+	color: #002db3;
+	font-family: "forte";
+	
+}
+
+#logo {
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	margin-top: 10%;
+	width: 20%;
+    height: 20%;
+    border-radius: 2px;
+}
+
+td{
+	font-size: 20px;
+	color: #002db3;
+}
+form{
+	margin-top: 2%;
+	margin-left: 10%;
+}
+input, #senha{
+	border: 1px solid #002db3;
+	display: inline-block;
+	border-radius: 4px;
+	height: 20px;
+	padding: 3px 8px;
+  	margin: 3px 0;
+  	width: 200px;
+  	font-family: Copperplate Gothic;
+  	font-size: 13px;
+}
+
+button {
+	-webkit-transition-duration: 0.8s; /* Safari */
+  	transition-duration: 0.9s;
+	background-color: white;
+	color: #002db3;
+	font-family: Copperplate Gothic;
+	font-size: 14px;
+	padding: 10px;
+	border: solid 1px;
+	border-left: 4px solid #002db3;
+	border-radius: 1px;
+	width: 150px;
+	height: 45px;
+	cursor: pointer;
+	margin-top: 3%;
+	margin-left: 16%
+}
+
+button:hover {
+	background-color: white; /* Green */
+  	color: #002db3;
+  	border-left: 8px solid #002db3;
+}

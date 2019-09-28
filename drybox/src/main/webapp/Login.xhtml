@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+	
+	<h:head>
+		<h:outputStylesheet library="css" name="estiloLogin.css" />
+		<link rel="icon" href="imagens/icone-adv.ico" type="image/x-icon" />
+		
+		<title>Advantech - DRY BOX Controller 1.1</title>
+	</h:head>
+	<body>
+	
+		<div id="titulo">DRY BOX</div>
+	
+		<form action="" method="post">
+		    <table id="tabela" cellspacing="20" cellpadding="1">
+		        <tr>
+		            <td><label for="login">Usuário: </label></td>
+		            <td><input type="text" name="login" id="login" placeholder="Nome de Usuário.." required="true"/></td>
+		        </tr>
+		        <tr>
+		            <td><h:outputLabel for="senha" value="Senha: "/></td>
+		            <td><p:password id="senha" value="" placeholder="Sua Senha.." feedback="true" 
+		            	promptLabel="Digite a senha" weakLabel="Força da senha : Fraca" goodLabel="Força da senha : Média" 
+		            	strongLabel="Força da senha : Forte" match="confSenha" required="true"/>
+		            </td>
+		        </tr>
+		    </table>
+		</form>
+		
+		<button onclick='' id="confirmar" type="submit">CONFIRMAR</button>
+	    
+	</body>
+</html>
